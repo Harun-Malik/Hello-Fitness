@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;    
+
+}
+.navbar{
+    height: 60px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+.navitem{
+    display: flex;
+}
+.navitem i{
+    font-size: 25px;
+    position: relative; 
+    left: 11%;
+ } 
+ .fa-wallet{
+    margin-left: 5px;
+ }
+ .login{
+    display: flex;
+ }
+ .login i{
+    font-size: 25px;
+    margin-right: 5px;
+ }
+.navitem p{
+    font-size: 20px;
+    margin: 0 50px;
+    padding-top: 22px;
+}
+.heading{
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.container{
+    width: 90%;
+    height: 70vh;
+    margin: 20px auto;
+    display: flex;
+    padding: 0 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    position: relative;
+}
+.box img{
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    opacity: 1;
+    filter: brightness(70%);
+}
+ 
+.box:hover{
+    flex: 1 1 20%;
+    transition: .5s;
+}
+.img-text{
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.box i{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 80%;
+    display: none;
+}
+.box:hover i{
+    display: block;
+}
+i{
+    cursor: pointer;
+}
